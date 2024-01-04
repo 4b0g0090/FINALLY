@@ -85,6 +85,8 @@ class Employee:
 
 
 employee1 = Employee("jason", 5, 100, 20)
+employee2 = Employee("MIKE", 6, 150, 10)
+employee3 = Employee("JAY", 3, 130, 15)
 
 # 使用成員函式/方法
 print("員工姓名：", employee1.get_name())
@@ -97,3 +99,32 @@ print("增加工時後的員工工時：", employee1.get_hours_worked(), "小時
 
 employee1.add_year(1)  # 增加年資1年
 print("增加年資後的員工年資：", employee1.get_seniority(), "年")
+
+
+
+
+# 使用成員函式/方法
+print("員工姓名：", employee2.get_name())
+print("員工年資：", employee2.get_seniority(), "年")
+print("員工工時：", employee2.get_hours_worked(), "小時")
+print("員工月薪：", employee2.money(), "元")
+
+employee2.add_work_time(10)  # 增加工時10小時
+print("增加工時後的員工工時：", employee2.get_hours_worked(), "小時")
+
+employee2.add_year(1)  # 增加年資1年
+print("增加年資後的員工年資：", employee2.get_seniority(), "年")
+
+
+
+# 使用成員函式/方法
+print("員工姓名：", employee3.get_name())
+print("員工年資：", employee3.get_seniority(), "年")
+print("員工工時：", employee3.get_hours_worked(), "小時")
+print("員工月薪：", employee3.money(), "元")
+
+employee3.add_work_time(10)  # 增加工時10小時
+print("增加工時後的員工工時：", employee3.get_hours_worked(), "小時")
+
+employee3.add_year(1)  # 增加年資1年
+print("增加年資後的員工年資：", employee3.get_seniority(), "年")
